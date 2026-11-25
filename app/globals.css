@@ -3,12 +3,22 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    color: #172554;
+    color: #0b2545;
     background-color: #ffffff;
   }
 
   body {
-    color: #172554;
+    color: #0b2545;
     background-color: #ffffff;
   }
+}
+
+/* Sembunyikan badge Powered by Netlify di pojok kanan bawah */
+a[href*="netlify.com"][style*="fixed"],
+div[style*="z-index: 2147483647"],
+[data-netlify-deploy-id],
+#netlify-badge {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }

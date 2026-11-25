@@ -42,7 +42,7 @@ export default function MainSections() {
 
               <p className="mt-4 text-sm leading-relaxed text-blue-900/90 sm:text-base">
                 Sebagai <strong className="text-blue-950">Project Partner Kios Pelangi</strong> untuk
-                wilayah <strong className="text-blue-950">Mojokerto, Surabaya, dan sekitarnya</strong>,
+                wilayah <strong className="text-blue-950">Surabaya, Sidoarjo, dan Mojokerto</strong>,
                 Steviani mendampingi panitia sekolah, bagian tata usaha, maupun
                 tim pengadaan instansi agar proses pemesanan berjalan tertib,
                 transparan, dan sesuai jadwal kegiatan.
@@ -124,7 +124,7 @@ export default function MainSections() {
             </p>
             <p className="mt-0.5 text-xs text-blue-800">
               Layanan Desain, Buku Kenangan, Kalender 2027 &amp; Souvenir ·
-              Mojokerto &amp; Surabaya
+              Surabaya ; Sidoarjo  dan Mojokerto
             </p>
           </div>
 

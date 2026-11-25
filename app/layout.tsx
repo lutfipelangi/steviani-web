@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | Steviani — Kios Pelangi',
   },
   description:
-    'Pendampingan pengadaan percetakan & kreatif untuk sekolah, kampus, dan instansi di Mojokerto, Surabaya, dan sekitarnya. Spesialis buku kenangan (yearbook), kalender custom 2027, souvenir acara, dan percetakan kebutuhan lembaga.',
+    'Pendampingan pengadaan percetakan & kreatif untuk sekolah, kampus, dan instansi di Surabaya,Sidoarjo dan Mojokerto dan sekitarnya. Spesialis buku kenangan (yearbook), kalender custom 2027, souvenir acara, dan percetakan kebutuhan lembaga.',
   keywords: [
     'Steviani Kios Pelangi',
     'percetakan buku kenangan sekolah Mojokerto',

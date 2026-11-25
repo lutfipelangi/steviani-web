@@ -180,7 +180,7 @@ export default function HeroSlider() {
               <p className="mt-4 text-base leading-relaxed text-slate-600">
                 Pendampingan lengkap mulai dari penyusunan konsep desain,
                 penyesuaian spesifikasi bahan dengan RAB, hingga kontrol produksi
-                bersama Kios Pelangi Mojokerto &amp; Surabaya.
+                bersama Kios Pelangi Surabaya amp; Sidoarjo & Mojokerto.
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
