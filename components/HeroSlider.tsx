@@ -17,7 +17,7 @@ const slides = [
     image: '/images/buku-kenangan.webp',
     alt: 'Desain dan Cetak Buku Kenangan Sekolah — Steviani Kios Pelangi',
     waText:
-      'Halo Bu Steviani, kami ingin konsultasi konsep dan harga cetak Buku Kenangan Sekolah.',
+      'Halo Kak, kami ingin konsultasi konsep dan harga cetak Buku Kenangan Sekolah.',
   },
   {
     id: 'produk-kalender',
@@ -33,7 +33,7 @@ const slides = [
     image: '/images/kalender2027.webp',
     alt: 'Daftar Harga Cetak Kalender Sekolah dan Instansi 2027 — Steviani Kios Pelangi',
     waText:
-      'Halo Bu Steviani, kami ingin minta penawaran cetak Kalender 2027 untuk sekolah/instansi kami.',
+      'Halo Kak, kami ingin minta penawaran cetak Kalender 2027 untuk sekolah/instansi kami.',
   },
   {
     id: 'produk-souvenir',
@@ -49,7 +49,7 @@ const slides = [
     image: '/images/surabaya-souvenir.webp',
     alt: 'Paket Souvenir Wisuda dan Seminar Instansi — Steviani Kios Pelangi',
     waText:
-      'Halo Bu Steviani, kami ingin tanya paket souvenir wisuda / acara instansi.',
+      'Halo kak, kami ingin tanya paket souvenir wisuda / acara instansi.',
   },
   {
     id: 'produk-percetakan',
@@ -65,7 +65,7 @@ const slides = [
     image: '/images/cetak-umkm.webp',
     alt: 'Layanan Percetakan Umum dan Promosi Lembaga — Steviani Kios Pelangi',
     waText:
-      'Halo Bu Steviani, kami ingin konsultasi kebutuhan cetak brosur / map / promosi lembaga.',
+      'Halo Kak, kami ingin konsultasi kebutuhan cetak brosur / map / promosi lembaga.',
   },
 ];
 

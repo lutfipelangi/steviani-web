@@ -123,11 +123,11 @@ export default function RootLayout({
           href="https://wa.me/62818470027?text=Halo%20Bu%20Steviani,%20kami%20ingin%20konsultasi%20dan%20tanya%20penawaran%20percetakan%20/%20Kalender%202027."
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Chat WhatsApp Bu Steviani"
+          aria-label="Chat WhatsApp Admin"
           className="fixed right-4 bottom-4 z-[2147483647] inline-flex items-center gap-2.5 rounded-full bg-[#25D366] px-4 py-3 text-xs font-extrabold text-white shadow-xl shadow-green-950/20 transition hover:scale-105 hover:bg-green-600 sm:right-5 sm:bottom-5 sm:px-5 sm:py-3.5 sm:text-sm"
         >
           <span className="flex h-2.5 w-2.5 rounded-full bg-white animate-pulse" />
-          <span>Chat WA · Bu Steviani</span>
+          <span>Chat WA · <Admin></Admin></span>
         </a>
 
         {/* PEMBERSIH OTOMATIS ELEMEN NETLIFY */}
