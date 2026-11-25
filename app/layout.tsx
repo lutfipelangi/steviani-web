@@ -116,23 +116,47 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+
+        {/* TOMBOL WA MELAYANG DI POJOK KANAN BAWAH (MENIMPA & MENGGANTIKAN BADGE NETLIFY) */}
+        <a
+          id="floating-wa-steviani"
+          href="https://wa.me/62818470027?text=Halo%20Bu%20Steviani,%20kami%20ingin%20konsultasi%20dan%20tanya%20penawaran%20percetakan%20/%20Kalender%202027."
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat WhatsApp Bu Steviani"
+          className="fixed right-4 bottom-4 z-[2147483647] inline-flex items-center gap-2.5 rounded-full bg-[#25D366] px-4 py-3 text-xs font-extrabold text-white shadow-xl shadow-green-950/20 transition hover:scale-105 hover:bg-green-600 sm:right-5 sm:bottom-5 sm:px-5 sm:py-3.5 sm:text-sm"
+        >
+          <span className="flex h-2.5 w-2.5 rounded-full bg-white animate-pulse" />
+          <span>Chat WA · Bu Steviani</span>
+        </a>
+
+        {/* PEMBERSIH OTOMATIS ELEMEN NETLIFY */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               (function () {
-                function removeNetlifyBadge() {
-                  document.querySelectorAll('a[href*="netlify.com"], [id*="netlify"], [class*="netlify"]').forEach(function (el) {
-                    el.remove();
+                function purgeNetlify() {
+                  document.querySelectorAll('a[href*="netlify"], iframe[src*="netlify"], [id*="netlify"], [class*="netlify"], [data-netlify-deploy-id]').forEach(function (el) {
+                    if (el.id !== 'floating-wa-steviani') el.remove();
                   });
-                  document.querySelectorAll('body > div, body > aside, body > section').forEach(function (el) {
+
+                  document.querySelectorAll('body > *').forEach(function (el) {
+                    if (el.id === 'floating-wa-steviani' || el.tagName === 'SCRIPT' || el.tagName === 'STYLE') return;
+                    var style = window.getComputedStyle(el);
                     var txt = (el.textContent || '').toLowerCase();
-                    if (txt.includes('powered by netlify') || (el.shadowRoot && (el.shadowRoot.innerHTML || '').toLowerCase().includes('netlify'))) {
+                    var isFloatingCorner =
+                      style.position === 'fixed' &&
+                      parseInt(style.zIndex || '0', 10) >= 9999;
+
+                    if (txt.includes('netlify') || isFloatingCorner || el.shadowRoot) {
                       el.remove();
                     }
                   });
                 }
-                removeNetlifyBadge();
-                var obs = new MutationObserver(removeNetlifyBadge);
+
+                purgeNetlify();
+                setInterval(purgeNetlify, 800);
+                var obs = new MutationObserver(purgeNetlify);
                 obs.observe(document.documentElement, { childList: true, subtree: true });
               })();
             `,
