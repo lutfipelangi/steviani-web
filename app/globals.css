@@ -22,3 +22,32 @@ div[style*="z-index: 2147483647"],
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #0b2545;
+    background-color: #ffffff;
+  }
+
+  body {
+    color: #0b2545;
+    background-color: #ffffff;
+  }
+}
+
+/* Sembunyikan badge Powered by Netlify di pojok kanan bawah */
+a[href*="netlify.com"],
+[id*="netlify"],
+[class*="netlify"],
+[data-netlify-deploy-id],
+div[style*="z-index: 2147483647"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
